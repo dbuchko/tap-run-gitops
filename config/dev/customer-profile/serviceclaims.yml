@@ -15,8 +15,8 @@ metadata:
 spec:
   ref:
     namespace: postgres-instances
-    apiVersion: sql.tanzu.vmware.com/v1
-    kind: Postgres
+    apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+    kind: ResourceClaim
     name: customer-profile-database
 ---
 apiVersion: servicebinding.io/v1alpha3
