@@ -31,6 +31,7 @@ spec:
           appliveview-sample/app-live-view-appflavours-boot
           appliveview-sample/app-live-view-systemproperties
         developer.conventions/target-containers: workload
+        serviceclaims.supplychain.apps.x-tanzu.vmware.com/extensions: '{"kind":"ServiceClaimsExtension","apiVersion":"supplychain.apps.x-tanzu.vmware.com/v1alpha1", "spec":   {"serviceClaims":{"db":{"namespace":"postgres-instances"}}}}'
         services.conventions.apps.tanzu.vmware.com/postgres: postgresql/42.3.7
       labels:
         apis.apps.tanzu.vmware.com/register-api: "true"
