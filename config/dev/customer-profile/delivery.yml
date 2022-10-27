@@ -51,7 +51,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: ed7149eb94c74c2ab15c3d467f095a87.azurecr.io/tap-grey/apps/customer-profile-dev@sha256:6e931a400c004f39166845456ce14722e3a599546ce2cc64c29c4d2d1b591e9d
+        image: ed7149eb94c74c2ab15c3d467f095a87.azurecr.io/tap-grey/apps/customer-profile-dev@sha256:0170adf9ea9a4bb31bdb1c8dc016411c77b594225d053f04c4589c006b74b29b
         livenessProbe:
           httpGet:
             path: /livez
