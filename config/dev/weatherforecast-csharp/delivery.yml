@@ -25,7 +25,7 @@ spec:
         carto.run/workload-name: weatherforecast-csharp
     spec:
       containers:
-      - image: ed7149eb94c74c2ab15c3d467f095a87.azurecr.io/tap-grey/apps/weatherforecast-csharp-dev@sha256:18de3c602eb145bf4401944ecbfad98d11e257f94056bbaeeb9997be265ef3a8
+      - image: ed7149eb94c74c2ab15c3d467f095a87.azurecr.io/tap-grey/apps/weatherforecast-csharp-dev@sha256:f11986dc49aea623907db913e99fca4e85dba3f6529232d0b3ecdb93e5616c25
         name: workload
         resources: {}
         securityContext:
