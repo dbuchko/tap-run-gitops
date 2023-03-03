@@ -10,8 +10,6 @@ metadata:
     app.kubernetes.io/part-of: tanzu-java-web-app
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    tanzu.app.live.view: "true"
-    tanzu.app.live.view.application.name: tanzu-java-web-app
     app.kubernetes.io/component: run
     carto.run/workload-name: tanzu-java-web-app
 spec:
@@ -50,7 +48,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: harbor.tanzu-common.aws.tanzu-studio.com/tap-blue/supply-chain/tanzu-java-web-app-dev@sha256:2cb196b15404d1bcda9cf93103e32090975ecc7ca1665cb4da5dd2819b64eaaa
+        image: harbor.tanzu-common.aws.tanzu-studio.com/tap-blue/supply-chain/tanzu-java-web-app-dev@sha256:22910cc9bb6ed236304c8877dbe045f3b44523da2e77567f22f259a04a381651
         livenessProbe:
           httpGet:
             path: /livez
